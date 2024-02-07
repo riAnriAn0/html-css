@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+:root{
+    --font1 : 'Gowun Dodum', sans-serif;
+    --font2 : Arial , sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+}
+body{
+    min-height: 100vh;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+header > p {
+    font-size: 30pt;
+    font-family: var(--font2);
+    font-weight: bold;
+}
+header > a{
+    color: white;
+    text-decoration: none;
+}
+header > a:hover{
+    text-decoration: underline;
+}
+section{
+    padding: 20pt;
+}
+section > p{
+    width: 40%;
+    padding: 20pt;
+}
+.preto{
+    background-color: rgba(15, 15, 15, 0.678);
+    color: white;
+}
+.branco{
+    background-color: white;
+}
+.imagen{
+    background-image: url(imagens/personagens.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagen > p {
+    background-color: rgba(0, 0, 0, 0.492);
+    color: white;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 10pt;
+    height: 20pt;
+}
+i {
+    margin-left: 10pt; 
+}
+footer > p > a{
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    opacity: 0.8;
+}
+
