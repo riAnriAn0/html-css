@@ -1,0 +1,93 @@
+:root{
+    --cor-amarelo:#0100be;
+    --cor-amarelo-escuro :#0B00DB;
+    --cor-azul:#d95300;
+    --cor-azul-escuro: #1e188f;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    background-color:#ffffff ;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #0100be;
+    height: 100pt; 
+}
+header > h1{
+    text-align: center;
+    margin: 0;
+}
+nav{
+    box-shadow: 10pt 10pt 0pt #ff6405;
+    background-color: #0100be;
+    height: 30pt;
+}
+nav > a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10pt;
+}
+nav>a:hover{
+    transition: .5s;
+    background-color: var(--cor-azul);
+    border-radius: 5pt;
+    text-decoration: underline;
+
+}
+main{
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    margin-top:11pt;
+    padding: 10pt;
+    background-color: #ffffff;
+    box-shadow: 0 0 10pt rgba(0, 0, 0, 0.382);
+}
+main > h1 {
+    text-align: center;
+    color: #1e188f;
+}
+main > h2 {
+    border-bottom: solid 2pt;
+    color: #1e188f;
+}
+main > p{
+    text-align: justify;
+    text-indent: 20pt;
+}
+img{
+    display: block;
+    margin: auto;
+}
+footer{
+    height: 200pt;
+    background-color: rgb(5, 0, 70);
+    color: white;
+    font-size: 10pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+i{
+    font-size: 15pt;
+}
+footer > p{
+    margin: bottom 10pt; ;
+}
+footer > div > a {
+    color: white;
+    text-decoration: none;
+}
+i:hover{
+    opacity: 0.8;
+}
