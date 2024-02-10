@@ -1,12 +1,10 @@
-:root{
-    --cor-amarelo:#0100be;
-    --cor-amarelo-escuro :#0B00DB;
-    --cor-azul:#d95300;
-    --cor-azul-escuro: #1e188f;
-}
+
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 body{
@@ -20,25 +18,30 @@ header{
     align-items: center;
     color: #ffffff;
     background-color: #0100be;
-    height: 100pt; 
+    height: 80pt; 
 }
 header > h1{
     text-align: center;
     margin: 0;
 }
 nav{
-    box-shadow: 10pt 10pt 0pt #ff6405;
     background-color: #0100be;
     height: 30pt;
 }
-nav > a{
+li{
+    display: inline-block;
+    color: #ffffff;
+}
+nav > li > i {
+    display: none;
+}
+nav  li a{
     color: #ffffff;
     text-decoration: none;
-    padding: 10pt;
 }
-nav>a:hover{
+nav a:hover{
     transition: .5s;
-    background-color: var(--cor-azul);
+    background-color: #423ad8;
     border-radius: 5pt;
     text-decoration: underline;
 
@@ -47,7 +50,6 @@ main{
     max-width: 800px;
     min-width: 300px;
     margin: auto;
-    margin-top:11pt;
     padding: 10pt;
     background-color: #ffffff;
     box-shadow: 0 0 10pt rgba(0, 0, 0, 0.382);
@@ -61,6 +63,7 @@ main > h2 {
     color: #1e188f;
 }
 main > p{
+    margin: 10pt;
     text-align: justify;
     text-indent: 20pt;
 }
@@ -78,16 +81,35 @@ footer{
     justify-content: end;
     align-items: center;
 }
+div{
+    width: auto;
+}
 i{
-    font-size: 15pt;
+    font-size: 13pt;
 }
 footer > p{
-    margin: bottom 10pt; ;
+    margin: 10pt;
 }
 footer > div > a {
+    margin: 0pt 5pt;
     color: white;
     text-decoration: none;
 }
 i:hover{
     opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+    nav{
+        height: 100pt;
+    }
+    nav li{
+        border-top: solid 1px black;
+        display: block;
+        background-color: rgb(105, 105, 105);
+        text-align: center;
+        padding: 5.5pt;
+    }
+    nav li:hover{
+        background-color: rgb(173, 173, 173);
+    }
 }
