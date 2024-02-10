@@ -5,9 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TESTE</title>
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    
+<body onresize="almentar()">
+    <header id="cabecalho">
+        <h1>Cabeçalho</h1>
+        <i  id="botao" onclick="abrir()" class="fa-solid fa-bars"></i>
+        <ul id="menu">
+            <li><a href="#">opiçao 1</a></li>
+            <li><a href="#">opiçao 2</a></li>
+            <li><a href="#">opiçao 3</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>titulo</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus minus laborum magnam nulla commodi impedit repellat sunt? Ex laborum iusto quod eum illo corrupti? Sapiente, quas tenetur. Obcaecati, repellendus maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At molestias esse ipsa ullam maxime error beatae provident et ad doloribus enim, deserunt sed quibusdam quidem quia, quo architecto nihil sapiente?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus minus laborum magnam nulla commodi impedit repellat sunt? Ex laborum iusto quod eum illo corrupti? Sapiente, quas tenetur. Obcaecati, repellendus maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quos laborum ut eligendi, aliquid debitis iste labore ratione odit perspiciatis. Aliquam fugit sint voluptate deleniti sequi id fuga consequuntur blanditiis.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus minus laborum magnam nulla commodi impedit repellat sunt? Ex laborum iusto quod eum illo corrupti? Sapiente, quas tenetur. Obcaecati, repellendus maiores.
+        </p>
+    </main>
+    <script >
+        function abrir(){   
+            if (menu.style.display =='none'){
+                menu.style.display = 'block'
+            } else {
+               menu.style.display = 'none'
+            }
+        }
+
+        function almentar(){
+            if(window.innerWidth >= 668){
+                menu.style.display = 'block'
+            } else {
+                    menu.style.display = 'none'
+            }
+        }
+
+    </script>
 </body>
 </html>
