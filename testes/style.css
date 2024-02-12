@@ -18,9 +18,7 @@ h1{
 i{
     width: 100%;
 }
-#menu{
-    display: none;
-}
+
 li{
     padding: 5pt;
     background-color: rgb(65, 65, 65);
@@ -48,7 +46,7 @@ p{
     text-align: justify;
     text-indent: 20pt;
 }
-@media screen and (min-width:668px) {
+@media (min-width:668px) {
     main{
         max-width:700px ;
         margin: auto;
